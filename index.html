@@ -50,7 +50,7 @@
         <!-- Profile Placeholder Image -->
         <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
             <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-400 p-1 shadow-xl">
-                <div class="w-full h-full bg-slate-200 rounded-2xl overflow-hidden flex items-center justify-between text-slate-400">
+                <div class="w-full h-full bg-slate-200 rounded-2xl overflow-hidden flex items-center justify-center text-slate-400">
                     <!-- Replace the src below with your actual professional headshot -->
                     <img src="jack2.png" alt="Practitioner Portrait" class="w-full h-full object-contain">
                 </div>
@@ -310,28 +310,59 @@
 
     <!-- Contact & Booking Section -->
     <section id="contact" class="max-w-xl mx-auto px-4 py-20">
-        <div class="text-center mb-8">
+        <div class="text-center mb-8 space-y-2">
+            <span class="inline-block bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                Secure Booking
+            </span>
             <h2 class="text-3xl font-bold text-slate-900">Book an Assessment</h2>
-            <p class="text-slate-600 text-sm mt-2">Ready to test your sensory reflexes? Drop a message below to coordinate an appointment slot.</p>
+            <p class="text-slate-600 text-sm max-w-sm mx-auto"> Ready to test your sensory reflexes? Connect securely via LINE Official Account to coordinate your appointment slot.</p>
         </div>
 
-        <form action="mailto:jirabutr@gmail.com" method="POST" class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 space-y-4">
-            <div>
-                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Full Name</label>
-                <input type="text" required class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-500 transition" placeholder="John Doe">
+        <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 text-center space-y-6">
+            
+            <div class="w-16 h-16 bg-[#06C755] text-white rounded-2xl flex items-center justify-center mx-auto shadow-md shadow-green-500/20 text-2xl">
+                <i class="fa-brands fa-line"></i>
             </div>
-            <div>
-                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Email Address</label>
-                <input type="email" required class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-500 transition" placeholder="john@example.com">
+
+            <div class="space-y-2">
+                <h3 class="font-bold text-lg text-slate-900">Consult via LINE Chat</h3>
+                <p class="text-slate-500 text-xs px-4">
+                    Clicking the button below securely opens your LINE app directly to our clinic chat channel. No credentials or personal history are exposed publicly.
+                </p>
             </div>
-            <div>
-                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Primary Symptom / History</label>
-                <textarea rows="4" required class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-500 transition" placeholder="Briefly explain what hurts, how long it has been going on, or any past trauma..."></textarea>
+
+            <div class="pt-2">
+                <a href="https://lin.ee/Tf0Dfhe" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center space-x-3 w-full bg-[#06C755] text-white font-bold py-4 px-6 rounded-xl hover:bg-[#05b34c] transition shadow-md shadow-green-500/10 text-base tracking-wide group">
+                    <span>แอดไลน์เพื่อจองคิว / Add Friend</span>
+                    <i class="fa-solid fa-arrow-right text-sm transition group-hover:translate-x-1"></i>
+                </a>
             </div>
-            <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition shadow-md text-sm">
-                Send Appointment Request
-            </button>
-        </form>
+
+            <div class="pt-4 border-t border-slate-100 grid grid-cols-2 gap-4 items-center">
+                <div class="flex flex-col items-center border-r border-slate-100 py-2">
+                    <div class="w-24 h-24 bg-slate-100 border border-slate-200 rounded-lg p-2 flex items-center justify-center relative overflow-hidden">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lin.ee/Tf0Dfhe" alt="LINE QR Code" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-[10px] text-slate-400 mt-2 font-medium">Scan QR Code</span>
+                </div>
+                
+                <div class="text-left pl-2 space-y-1">
+                    <span class="text-[10px] text-slate-400 block uppercase font-bold tracking-wider">Search LINE ID</span>
+                    <p class="text-sm font-mono font-bold text-slate-800 bg-slate-50 border border-slate-200 rounded-md px-2.5 py-1.5 inline-block">
+                        @p-dtr.clinic
+                    </p>
+                    <span class="text-[10px] text-slate-400 block italic">Include the @ symbol</span>
+                </div>
+            </div>
+
+            <div class="bg-blue-50/50 rounded-xl p-3 text-left border border-blue-100/50">
+                <p class="text-[11px] text-slate-600 leading-normal">
+                    <strong class="text-blue-900 block mb-0.5"><i class="fa-solid fa-lightbulb mr-1 text-blue-500"></i> Tip for your message:</strong> 
+                    Mention your main pain symptoms, how long you've had them, and any previous surgeries or major scars so we can map your neural pathways effectively!
+                </p>
+            </div>
+
+        </div>
     </section>
 
     <!-- Footer -->
