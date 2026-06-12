@@ -20,7 +20,7 @@
             <nav class="flex space-x-6 text-sm font-medium text-slate-600">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#method" class="hover:text-blue-600 transition">The Method</a>
-                <a href="#qualifications" class="hover:text-blue-600 transition">Credentials</a>
+                <a href="#testimonials" class="hover:text-blue-600 transition">Testimonials</a>
                 <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition shadow-sm">Book Session</a>
             </nav>
         </div>
@@ -221,72 +221,84 @@
             </div>
 
             <!-- Case Study Container -->
-            <div class="bg-white p-6 md:p-10 rounded-2xl shadow-md border border-slate-200 grid lg:grid-cols-12 gap-8 items-center">
-                
-                <!-- Video Columns (7/12 layout) -->
-                <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4">
-                    <!-- Before Video Frame -->
-                    <div class="space-y-2">
-                        <span class="inline-flex items-center text-xs font-bold bg-amber-100 text-amber-800 px-2.5 py-1 rounded">
-                            <span class="w-1.5 h-1.5 bg-amber-500 rounded-full mr-1.5 animate-pulse"></span>
-                            Before P-DTR Reset
-                        </span>
-                        <div class="relative aspect-video bg-slate-900 rounded-xl overflow-hidden shadow-inner border border-slate-200">
-                            <!-- Replace with your actual video source or embed link -->
-                            <video class="w-full h-full object-cover" controls preload="metadata" poster="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=400">
-                                <source src="BEFORE1.MOV" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <p class="text-slate-500 text-xs italic text-center">Hemifacial Spasm before treating.</p>
-                    </div>
-
-                    <!-- After Video Frame -->
-                    <div class="space-y-2">
-                        <span class="inline-flex items-center text-xs font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded">
-                            <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-1.5"></span>
-                            After (Same Session)
-                        </span>
-                        <div class="relative aspect-video bg-slate-900 rounded-xl overflow-hidden shadow-inner border border-slate-200">
-                            <!-- Replace with your actual video source or embed link -->
-                            <video class="w-full h-full object-cover" controls preload="metadata" poster="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=400">
-                                <source src="AFTER1.MOV" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <p class="text-slate-500 text-xs italic text-center">The spasm stopped after clear sensory input reset.</p>
-                    </div>
+            <div class="lg:col-span-7 space-y-12">
+    <!-- ================= CASE 1 ================= -->
+    <div>
+        <h3 class="text-sm font-bold text-slate-700 mb-4 text-center sm:text-left">Case 1: Hemifacial Spasm</h3>
+        <div class="grid sm:grid-cols-2 gap-4">
+            <!-- Before Video Frame -->
+            <div class="space-y-2 flex flex-col items-center">
+                <span class="inline-flex items-center text-xs font-bold bg-amber-100 text-amber-800 px-2.5 py-1 rounded">
+                    <span class="w-1.5 h-1.5 bg-amber-500 rounded-full mr-1.5 animate-pulse"></span>
+                    Before P-DTR Reset
+                </span>
+                <div class="relative w-full aspect-video bg-slate-900 rounded-xl overflow-hidden shadow-inner border border-slate-200">
+                    <video class="w-full h-full object-cover" controls preload="metadata" poster="https://unsplash.com">
+                        <source src="BEFORE1.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
+                <p class="text-slate-500 text-xs italic text-center">Hemifacial Spasm before treating.</p>
+            </div>
 
-              
-
+            <!-- After Video Frame -->
+            <div class="space-y-2 flex flex-col items-center">
+                <span class="inline-flex items-center text-xs font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded">
+                    <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-1.5"></span>
+                    After (Same Session)
+                </span>
+                <div class="relative w-full aspect-video bg-slate-900 rounded-xl overflow-hidden shadow-inner border border-slate-200">
+                    <video class="w-full h-full object-cover" controls preload="metadata" poster="https://unsplash.com">
+                        <source src="AFTER1.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="text-slate-500 text-xs italic text-center">The spasm stopped after clear sensory input reset.</p>
             </div>
         </div>
-    </section>
-    <!-- Qualifications & Track Record Section -->
-    <section id="qualifications" class="bg-slate-100 py-20 border-t border-b border-slate-200">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-slate-900 text-center mb-12">My Credentials & P-DTR Journey</h2>
-            
-            <div class="space-y-8 bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                <div class="border-l-4 border-blue-600 pl-4">
-                    <span class="text-xs font-bold text-blue-600 uppercase">Advanced Track</span>
-                    <h3 class="text-lg font-bold text-slate-900">[P-DTR Advanced Level Certification]</h3>
-                    <p class="text-sm text-slate-600 mt-1">Deep study of visceral receptors, cranial nerves, deep metabolic pathways, and complex motor patterns via Dr. Jose Palomar's methodology.</p>
+    </div>
+
+    <!-- ================= CASE 2 (เพิ่มใหม่) ================= -->
+    <div class="border-t border-slate-100 pt-8">
+        <h3 class="text-sm font-bold text-slate-700 mb-4 text-center sm:text-left">Case 2: Sensory Input Adjustment</h3>
+        <div class="grid sm:grid-cols-2 gap-4">
+            <!-- Before Video Frame -->
+            <div class="space-y-2 flex flex-col items-center">
+                <span class="inline-flex items-center text-xs font-bold bg-amber-100 text-amber-800 px-2.5 py-1 rounded">
+                    <span class="w-1.5 h-1.5 bg-amber-500 rounded-full mr-1.5 animate-pulse"></span>
+                    Before P-DTR Reset
+                </span>
+                <div class="relative w-full aspect-video bg-slate-900 rounded-xl overflow-hidden shadow-inner border border-slate-200">
+                    <!-- เปลี่ยนไฟล์วิดีโอเคส 2 ตรงนี้ -->
+                    <video class="w-full h-full object-cover" controls preload="metadata" poster="https://unsplash.com">
+                        <source src="BEFORE2.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-                <div class="border-l-4 border-slate-300 pl-4">
-                    <span class="text-xs font-bold text-slate-500 uppercase">Foundations & Intermediate</span>
-                    <h3 class="text-lg font-bold text-slate-900">[P-DTR Intermediate Certification]</h3>
-                    <p class="text-sm text-slate-600 mt-1">Mastered primary receptor pathways (golgi tendon organs, spindle cells, nociceptors) and multi-receptor compensation maps.</p>
+                <p class="text-slate-500 text-xs italic text-center">Symptoms before second treatment session.</p>
+            </div>
+
+            <!-- After Video Frame -->
+            <div class="space-y-2 flex flex-col items-center">
+                <span class="inline-flex items-center text-xs font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded">
+                    <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-1.5"></span>
+                    After (Same Session)
+                </span>
+                <div class="relative w-full aspect-video bg-slate-900 rounded-xl overflow-hidden shadow-inner border border-slate-200">
+                    <!-- เปลี่ยนไฟล์วิดีโอเคส 2 ตรงนี้ -->
+                    <video class="w-full h-full object-cover" controls preload="metadata" poster="https://unsplash.com">
+                        <source src="AFTER2.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-                <div class="border-l-4 border-slate-300 pl-4">
-                    <span class="text-xs font-bold text-slate-500 uppercase">Primary License</span>
-                    <h3 class="text-lg font-bold text-slate-900">Thai traditional medicine Licensed</h3>
-                    <p class="text-sm text-slate-600 mt-1">Graduated from Phenkhae Thai Traditional Medicine School providing the rigorous anatomical basis required for neuromusculoskeletal interventions.</p>
-                </div>
+                <p class="text-slate-500 text-xs italic text-center">Immediate improvement observed after reset.</p>
             </div>
         </div>
+    </div>
+</div>
+        </div>
     </section>
+  
 
     <!-- Contact & Booking Section -->
     <section id="contact" class="max-w-xl mx-auto px-4 py-20">
