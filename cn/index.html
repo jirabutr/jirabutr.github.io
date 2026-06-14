@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Jirabutr | P-DTR 神经疗法专家</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- 谷歌中文字体以确保排版美观 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans SC', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 tracking-wide">
+<!-- Floating Language Selector Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 bg-white/90 backdrop-blur-md border border-slate-200 px-3 py-2 rounded-full shadow-lg flex items-center space-x-1.5 text-xs font-bold text-slate-700">
+        <button onclick="window.location.href='../th/index.html'" id="btn-th" class="px-2.5 py-1.5 rounded-full hover:bg-slate-100 transition uppercase tracking-wider text-blue-600 bg-blue-50">TH</button>
+        <span class="text-slate-300">|</span>
+        <button onclick="window.location.href='../index.html'" id="btn-en" class="px-2.5 py-1.5 rounded-full hover:bg-slate-100 transition uppercase tracking-wider">EN</button>
+        
+    </div>
+    <!-- 导航栏 (Navigation Bar) -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="bg-emerald-600 text-white px-3 py-1.5 rounded-lg font-bold text-lg tracking-wider">Jack</div>
+                <span class="font-semibold text-slate-900 hidden sm:inline">P-DTR 神经疗法</span>
+            </div>
+            <nav class="flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-emerald-600 transition">关于我</a>
+                <a href="#method" class="hover:text-emerald-600 transition">治疗原理</a>
+                <a href="#gallery" class="hover:text-emerald-600 transition">疗效见证</a>
+                <a href="#contact" class="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition shadow-sm">预约治疗</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 个人简介核心区 (Hero Section) -->
+    <section id="about" class="max-w-6xl mx-auto px-4 py-20 text-center md:text-left md:flex md:items-center md:justify-between md:gap-12">
+        <div class="md:w-1/2 space-y-6">
+            <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                Functional Neurology Practitioner
+            </span>
+            <h1 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight">
+                调节 <span class="text-emerald-600">神经系统</span><br>彻底解决慢性疼痛根源
+            </h1>
+            <p class="text-base text-slate-600 leading-relaxed">
+                您好，我是 <strong>Jack 医生</strong>，一名专注于本功能性深层腱反射疗法（Proprioceptive Deep Tendon Reflex, 简称 P-DTR）的神经疗法专家。我致力于检测并重置大脑接收到的错误感官信号（Faulty Sensory Inputs），这正是导致身体长期酸痛、骨骼结构失衡以及运动损伤的真正核心根源。
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                <a href="#contact" class="bg-emerald-600 text-white text-center px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition shadow-md">
+                    <i class="fa-brands fa-line mr-2"></i>通过 LINE 咨询预约
+                </a>
+                <a href="#method" class="border border-slate-300 text-slate-700 text-center px-6 py-3 rounded-lg font-medium hover:bg-slate-100 transition">
+                    深入了解 P-DTR
+                </a>
+            </div>
+        </div>
+        <!-- 个人头像 -->
+        <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+            <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-full bg-gradient-to-tr from-emerald-600 to-teal-400 p-1 shadow-xl">
+                <div class="w-full h-full bg-slate-200 rounded-full overflow-hidden">
+                    <img src="../jack.jpg" alt="Jack Portrait" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 治疗原理介绍 (P-DTR Methodology) -->
+    <section id="method" class="bg-slate-900 text-white py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl font-bold tracking-tight">P-DTR® 身体运作系统原理</h2>
+                <p class="text-slate-400 text-sm">传统疗法通常只针对骨骼和肌肉（硬件）进行调理，而 P-DTR 则深入到感觉受器与大脑思维系统（软件）进行根本性修复。</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 卡片 1 -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg">
+                    <div class="text-emerald-400 text-3xl mb-4"><i class="fa-solid fa-microchip"></i></div>
+                    <h3 class="text-xl font-bold mb-2">1. 感受器 (Receptors)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">我们体内拥有数以百万计的感受器，随时向大脑传递压力、疼痛和拉伸等信息。当经历创伤或外伤后，这些感受器可能会变得过度敏感，持续向大脑发送错误的“警报信号”。</p>
+                </div>
+                <!-- 卡片 2 -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-emerald-500/30 ring-2 ring-emerald-500/20 shadow-lg">
+                    <div class="text-emerald-400 text-3xl mb-4"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="text-xl font-bold mb-2">2. 大脑代偿机制 (Compensation)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">当大脑接收到这些扭曲的警报信号时，为了保护身体，它会选择“关闭开关”或使某些肌肉群变弱。这会导致其他部位的肌肉不得不超负荷工作，从而引发长期紧绷、疼痛或慢性炎症。</p>
+                </div>
+                <!-- 卡片 3 -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg">
+                    <div class="text-emerald-400 text-3xl mb-4"><i class="fa-solid fa-bolt"></i></div>
+                    <h3 class="text-xl font-bold mb-2">3. 神经系统重置 (The Reset)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">我们通过徒手肌肉测试（Manual Muscle Testing）结合对特定感受器的精准刺激来进行诊断。随后利用深层腱反射（Deep Tendon Reflex）敲击来清理系统干扰，将正确的信号即时输送回大脑。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 真实案例展示 (Before & After Gallery) -->
+    <section id="gallery" class="max-w-6xl mx-auto px-4 py-20">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+            <span class="text-emerald-600 text-xs font-bold uppercase tracking-wider">Clinical Case Studies</span>
+            <h2 class="text-3xl font-bold text-slate-900">真实临床康复案例分享</h2>
+            <p class="text-slate-600 text-sm">展示患者在接受神经感官系统调理后，身体活动度和结构发生的即时改善与变化。</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- 案例 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200 space-y-4">
+                <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                    <h3 class="font-bold text-slate-900 text-base">面部抽搐（面肌痉挛）康复案例</h3>
+                    <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2 py-1 rounded">视频对比</span>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="space-y-1">
+                        <span class="text-xs text-amber-600 font-medium"><i class="fa-solid fa-circle-play mr-1"></i>治疗前</span>
+                        <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden border border-slate-200">
+                            <video class="w-full h-full object-cover" controls preload="metadata">
+                                <source src="../BEFORE1.MOV" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs text-emerald-600 font-medium"><i class="fa-solid fa-circle-play mr-1"></i>治疗后即刻</span>
+                        <div class="aspect-video bg-slate-900 rounded-lg overflow-hidden border border-slate-200">
+                            <video class="w-full h-full object-cover" controls preload="metadata">
+                                <source src="../AFTER1.MOV" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-slate-500 text-xs italic">疗效：通过清理颈椎部位的神经干扰信号，成功阻断并平息了面部肌肉的异常抽搐现象。</p>
+            </div>
+
+            <!-- 案例 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200 space-y-4">
+                <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                    <h3 class="font-bold text-slate-900 text-base">舌根肌肉僵硬痉挛案例</h3>
+                    <span class="text-xs bg-blue-100 text-blue-800 font-semibold px-2 py-1 rounded">图片对比</span>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="space-y-1">
+                        <span class="text-xs text-amber-600 font-medium"><i class="fa-solid fa-image mr-1"></i>治疗前</span>
+                        <div class="h-40 bg-slate-200 rounded-lg overflow-hidden border border-slate-200">
+                            <img src="../pic1_before.JPG" alt="Before Posture" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs text-emerald-600 font-medium"><i class="fa-solid fa-image mr-1"></i>治疗后即刻</span>
+                        <div class="h-40 bg-slate-200 rounded-lg overflow-hidden border border-slate-200">
+                            <img src="../pic1_after.JPG" alt="After Posture" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <p class="text-slate-500 text-xs italic">疗效：成功清理了第12对脑神经（舌下神经）与舌根肌肉的系统性神经干扰信号。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 预约与咨询板块 (Contact & Appointment) -->
+    <section id="contact" class="max-w-md mx-auto px-4 py-20">
+        <div class="text-center mb-8 space-y-2">
+            <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                Appointment & Consulting
+            </span>
+            <h2 class="text-3xl font-bold text-slate-900">预约您的专属疗程</h2>
+            <p class="text-slate-600 text-sm">欢迎通过 LINE 官方账号进行免费的初步疼痛问题咨询与神经系统评估。</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 text-center space-y-6">
+            <div class="w-16 h-16 bg-[#06C755] text-white rounded-2xl flex items-center justify-center mx-auto shadow-md shadow-emerald-500/20 text-3xl">
+                <i class="fa-brands fa-line"></i>
+            </div>
+
+            <div class="space-y-1">
+                <h3 class="font-bold text-lg text-slate-900">联系 LINE 官方客服</h3>
+                <p class="text-slate-500 text-xs px-2">
+                    您可以点击下方按钮直接添加诊所的官方 LINE 账号。我们严格遵守隐私保护条例，确保您的个人健康信息绝对安全。
+                </p>
+            </div>
+
+            <!-- LINE OA 直达链接 -->
+            <div class="pt-2">
+                <a href="https://lin.ee/Tf0Dfhe" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center space-x-3 w-full bg-[#06C755] text-white font-bold py-4 px-6 rounded-xl hover:bg-[#05b34c] transition shadow-lg shadow-green-500/20 text-base group">
+                    <span>添加好友 预约看诊 / Add Friend</span>
+                    <i class="fa-solid fa-arrow-right text-sm transition group-hover:translate-x-1"></i>
+                </a>
+            </div>
+
+            <!-- 电脑端扫描的二维码 -->
+            <div class="pt-4 border-t border-slate-100 grid grid-cols-2 gap-4 items-center">
+                <div class="flex flex-col items-center border-r border-slate-100 py-1">
+                    <div class="w-24 h-24 bg-slate-50 border border-slate-200 rounded-lg p-2 flex items-center justify-center">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lin.ee/Tf0Dfhe" alt="LINE QR Code" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-[10px] text-slate-400 mt-1.5 font-medium">手机扫描二维码</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 (Footer) -->
+    <footer class="bg-slate-900 text-slate-500 text-xs py-10 border-t border-slate-800 text-center">
+        <div class="max-w-6xl mx-auto px-4 space-y-2">
+            <p>&copy; 2026 Jack Neuro Therapy. 保留所有权利。</p>
+            <p class="max-w-md mx-auto text-slate-600 text-[11px] leading-relaxed">医疗免责声明：P-DTR 疗法是一种在功能层面上调理神经感官与身体机能的系统性工具，不能替代应对严重突发急性外伤或急诊的传统外科手术或传统急救医疗手段。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
