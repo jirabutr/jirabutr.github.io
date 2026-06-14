@@ -9,7 +9,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans tracking-wide">
+<!-- Floating Language Selector Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 bg-white/90 backdrop-blur-md border border-slate-200 px-3 py-2 rounded-full shadow-lg flex items-center space-x-1.5 text-xs font-bold text-slate-700">
+        <button onclick="swindow.location.href='/th/index.html'" id="btn-th" class="px-2.5 py-1.5 rounded-full hover:bg-slate-100 transition uppercase tracking-wider text-blue-600 bg-blue-50">TH</button>
+        <span class="text-slate-300">|</span>
+        <button onclick="window.location.href='/cn/index.html'" id="btn-en" class="px-2.5 py-1.5 rounded-full hover:bg-slate-100 transition uppercase tracking-wider">CN</button>
 
+    </div>
     <!-- Header / Navigation -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
@@ -262,37 +268,30 @@
     <div class="border-t border-slate-100 pt-8">
         <h3 class="text-sm font-bold text-slate-700 mb-4 text-center sm:text-left">Case 2: Sensory Input Adjustment</h3>
         <div class="grid sm:grid-cols-2 gap-4">
-            <!-- Before Video Frame -->
-            <div class="space-y-2 flex flex-col items-center">
-                <span class="inline-flex items-center text-xs font-bold bg-amber-100 text-amber-800 px-2.5 py-1 rounded">
-                    <span class="w-1.5 h-1.5 bg-amber-500 rounded-full mr-1.5 animate-pulse"></span>
-                    Before P-DTR Reset
-                </span>
-                <div class="relative w-full aspect-video bg-slate-900 rounded-xl overflow-hidden shadow-inner border border-slate-200">
-                    <!-- เปลี่ยนไฟล์วิดีโอเคส 2 ตรงนี้ -->
-                    <video class="w-full h-full object-cover" controls preload="metadata" poster="https://unsplash.com">
-                        <source src="BEFORE2.MOV" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+     <!-- เคสที่ 2: ภาพถ่ายโครงสร้างร่างกาย -->
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200 space-y-4">
+                <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                    <h3 class="font-bold text-slate-900 text-base">Tongue stiffness</h3>
+                    <span class="text-xs bg-blue-100 text-blue-800 font-semibold px-2 py-1 rounded">Comparison images</span>
                 </div>
-                <p class="text-slate-500 text-xs italic text-center">Symptoms before second treatment session.</p>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="space-y-1">
+                        <span class="text-xs text-amber-600 font-medium"><i class="fa-solid fa-image mr-1"></i>Before</span>
+                        <div class="h-40 bg-slate-200 rounded-lg overflow-hidden border border-slate-200">
+                            <img src="../pic1_before.JPG" alt="Before Posture" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs text-emerald-600 font-medium"><i class="fa-solid fa-image mr-1"></i>After</span>
+                        <div class="h-40 bg-slate-200 rounded-lg overflow-hidden border border-slate-200">
+                            <img src="../pic1_after.JPG" alt="After Posture" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                <p class="text-slate-500 text-xs italic">The result of clearing interference from the 12th cranial nerve. (the hypoglossal nerve) and base of tongue muscle</p>
             </div>
 
-            <!-- After Video Frame -->
-            <div class="space-y-2 flex flex-col items-center">
-                <span class="inline-flex items-center text-xs font-bold bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded">
-                    <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-1.5"></span>
-                    After (Same Session)
-                </span>
-                <div class="relative w-full aspect-video bg-slate-900 rounded-xl overflow-hidden shadow-inner border border-slate-200">
-                    <!-- เปลี่ยนไฟล์วิดีโอเคส 2 ตรงนี้ -->
-                    <video class="w-full h-full object-cover" controls preload="metadata" poster="https://unsplash.com">
-                        <source src="AFTER2.MOV" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <p class="text-slate-500 text-xs italic text-center">Immediate improvement observed after reset.</p>
-            </div>
+          
         </div>
     </div>
 </div>
